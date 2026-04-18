@@ -5,6 +5,11 @@
 			slug: 'counter',
 			name: 'Counter',
 			description: 'Increment, decrement, and track a number with full undo/redo history.'
+		},
+		{
+			slug: 'bulk-image-viewer',
+			name: 'Bulk Image Viewer',
+			description: 'Easily view and export large lists of images at once.'
 		}
 	];
 

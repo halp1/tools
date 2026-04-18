@@ -1,5 +1,7 @@
 <script lang="ts">
 	import NumberFlow from '@number-flow/svelte';
+	import PageHeader from '$lib/components/PageHeader.svelte';
+	import Kbd from '$lib/components/Kbd.svelte';
 
 	let history = $state<number[]>([0]);
 	let index = $state(0);
@@ -25,7 +27,7 @@
 
 	const onkeydown = (e: KeyboardEvent) => {
 		const tag = (e.target as HTMLElement).tagName;
-		if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+		if (tag === 'INPUT' || tag === 'TEXTAREA' || e.altKey) return;
 
 		if (e.code === 'ArrowLeft') {
 			e.preventDefault();
@@ -61,9 +63,7 @@
 <svelte:window {onkeydown} />
 
 <div class="flex flex-1 flex-col items-center justify-center gap-12 px-6 py-16">
-	<div class="flex flex-col items-center gap-2">
-		<h1 class="font-heading text-4xl text-text">Counter</h1>
-	</div>
+	<PageHeader title="Counter" />
 
 	<div class="flex items-center gap-10">
 		<button
@@ -108,9 +108,7 @@
 					<span class="text-sm text-muted">{shortcut.label}</span>
 					<div class="flex items-center gap-1">
 						{#each shortcut.keys as key (key)}
-							<kbd class="border border-border bg-bg px-1.5 py-0.5 font-mono text-xs text-text"
-								>{key}</kbd
-							>
+							<Kbd>{key}</Kbd>
 						{/each}
 					</div>
 				</div>
