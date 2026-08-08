@@ -5,9 +5,10 @@
 	interface Props {
 		text: string;
 		label?: string;
+		class?: string;
 	}
 
-	let { text, label = 'Copy' }: Props = $props();
+	let { text, label = 'Copy', class: className }: Props = $props();
 
 	let copied = $state(false);
 
@@ -24,14 +25,12 @@
 	};
 </script>
 
-<Button
-	onclick={copy}
->
+<Button onclick={copy} class={className}>
 	{#if copied}
-		<Check />
+		<Check size={14} />
 		Copied
 	{:else}
-		<Copy />
+		<Copy size={14} />
 		{label}
 	{/if}
 </Button>

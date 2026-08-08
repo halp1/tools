@@ -11,5 +11,5 @@
 	{#if eyebrow}
 		<p class="text-xs tracking-[0.18em] text-muted uppercase">{eyebrow}</p>
 	{/if}
-	<h1 class="font-heading text-4xl text-text">{title}</h1>
+	<h1 class="text-center font-heading text-3xl text-text sm:text-4xl">{title}</h1>
 </div>
