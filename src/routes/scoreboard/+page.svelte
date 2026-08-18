@@ -98,7 +98,7 @@
 </script>
 
 <svelte:head>
-	<title>halp/tools / scoreboard</title>
+	<title>HALP/TOOLS / scoreboard</title>
 </svelte:head>
 
 <div class="relative flex flex-1 flex-col gap-6 p-4 sm:gap-8 sm:p-8">

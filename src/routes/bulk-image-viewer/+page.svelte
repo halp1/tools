@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>halp/tools / bulk image viewer</title>
+	<title>HALP/TOOLS / bulk image viewer</title>
 </svelte:head>
 
 <div class="relative flex flex-1 flex-col gap-6 p-4 sm:gap-8 sm:p-8">

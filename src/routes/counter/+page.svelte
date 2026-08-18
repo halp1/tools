@@ -69,7 +69,7 @@
 </script>
 
 <svelte:head>
-	<title>halp/tools / counter</title>
+	<title>HALP/TOOLS / counter</title>
 </svelte:head>
 
 <svelte:window {onkeydown} />

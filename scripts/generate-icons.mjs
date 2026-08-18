@@ -2,7 +2,7 @@
  * Draws the PWA icons and writes them as PNGs.
  *
  * The mark is the app's own visual language: the lime corner bracket from `.card::before`
- * plus a slash for "halp/tools", on the page background.
+ * plus a slash for "HALP/TOOLS", on the page background.
  *
  * Run with `node scripts/generate-icons.mjs` after changing the design. The output is
  * committed, so this is not part of the build.

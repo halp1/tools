@@ -26,7 +26,7 @@
 </script>
 
 <svelte:head>
-	<title>halp/tools</title>
+	<title>HALP/TOOLS</title>
 </svelte:head>
 
 <div class="p-4 sm:p-8">
